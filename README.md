@@ -1,2 +1,2 @@
 # Programmeerimiskeeled
-proge keelte tutvustus
+Tutvustav veebileht mõnele polulaarsele programmeerimiskeelele
