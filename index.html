@@ -1,22 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Programmeerimiskeelte Tutvustus</title>
 </head>
 <body>
-    <h1>Programmeerimis keelte tutvustus</h1>
-    
-    <p>*Siia tuleb tutvustus, pildid ja linkid teistele lehtedele*</p>
-    
-    <nav>
-        <h2>Navigate to:</h2>
-        <ul>
-            <li><a href="pages/C++.html">Page 1</a></li>
-            <li><a href="sub_javascript/main.html">Page 2</a></li>
-            <li><a href="python.html">Page 3</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>Programmeerimiskeeled</h1>
+        <p class="subtitle">Erinevate programmeerimiskeelte tutvustus ja võrdlus</p>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="intro-text">
+                Programmeerimiskeeled on tööriistad, mille abil saame arvutitele käske anda ja rakendusi luua. 
+                Iga programmeerimiskeel omab oma eripärasid, tugevusi ja nõrkuseid. Sellel lehel tutvustame 
+                mõningaid populaarsemaid ja kasulikumaid programmeerimiskeeli, et tunda paremini nende erisusi 
+                ja võimalusi. Olenemata sellest, kas soovid alustada arendust või otsid paremat keelt konkreetse 
+                ülesande jaoks, leiad siit väärtuslikku teavet.
+            </p>
+        </section>
+
+        <section class="languages">
+            <h2>Tutvustuse Keeled</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Python</h3>
+                    <p><strong>Lihtne ja võimas</strong></p>
+                    <p>Hästi loetav süntaks, populaarne masinõppe ja teadusarvutuste valdkonnas.</p>
+                    <a href="python.html" class="btn">Tutvustus</a>
+                </div>
+                <div class="feature-card">
+                    <h3>JavaScript</h3>
+                    <p><strong>Veebiarenduse vundament</strong></p>
+                    <p>Dünaamiline, interpreteeritav keel, mida kasutatakse brauserites ja serverites.</p>
+                    <a href="sub_javascript/main.html" class="btn">Tutvustus</a>
+                </div>
+                <div class="feature-card">
+                    <h3>C++</h3>
+                    <p><strong>Võimas ja kiire</strong></p>
+                    <p>Peamiselt madalama taseme programmeerimiseks, mängude ja süsteemitarkvara arenduseks.</p>
+                    <a href="pages/C++.html" class="btn">Tutvustus</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="comparison">
+            <h2>Keelte Võrdlus</h2>
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>Omadus</th>
+                        <th>Python</th>
+                        <th>JavaScript</th>
+                        <th>C++</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Raskusaste</strong></td>
+                        <td>Lihtne</td>
+                        <td>Keskmine</td>
+                        <td>Raske</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kiirendus</strong></td>
+                        <td>Aeglane</td>
+                        <td>Keskmine</td>
+                        <td>Kiire</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kasutusvaldkonnad</strong></td>
+                        <td>AI, andmeanalüüs, veeb</td>
+                        <td>Veeb, serverid, mobiil</td>
+                        <td>Süsteemid, mängud, kõrge jõudlus</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tüüpimine</strong></td>
+                        <td>Dünaamiline</td>
+                        <td>Dünaamiline</td>
+                        <td>Staatiline</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ökosüsteem</strong></td>
+                        <td>Väga lai</td>
+                        <td>Väga lai</td>
+                        <td>Lai</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
 </body>
 </html>

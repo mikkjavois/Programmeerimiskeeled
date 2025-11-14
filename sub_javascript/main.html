@@ -2,7 +2,7 @@
 <html lang="et">
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>Javascript</title>
 </head>
 <body>
@@ -18,19 +18,10 @@
                 class="main-image"
             >
             <p class="intro-text">
-                JavaScript on dünaamiline, interpreteeritav programmeerimiskeel, mis on saanud veebiarenduse 
-                vundamendiks. Algselt loodud veebilehtede interaktiivsuse lisamiseks, on JavaScript kasvanud 
-                võimsaks keeleks, mida kasutatakse nii kliendi- kui ka serveripoolses arenduses.
-            </p>
-        </section>
-
-        <section class="history">
-            <h2>Ajalugu</h2>
-            <p>
-                JavaScript loodi 1995. aastal Brendan Eichi poolt vaid 10 päevaga Netscape Communications 
-                Corporation'is. Algselt nimetati keelt Mocha'ks, seejärel LiveScript'iks ja lõpuks 
-                JavaScript'iks turunduslikel põhjustel. Vaatamata nimele ei ole JavaScript otseselt seotud 
-                Java programmeerimiskeelega.
+                JavaScript on paindlik ja laialdaselt kasutatav programmeerimiskeel, mis kujundab suure osa tänapäevasest veebist. 
+                Algselt loodud veebilehtedele interaktiivsuse lisamiseks, on see arenenud täisväärtuslikuks tehnoloogiaks, 
+                mida kasutatakse nii brauseris kui ka serveris, mobiili- ja töölauarakendustes ning isegi nutiseadmetes. 
+                Tänu oma universaalsusele ja võimekale ökosüsteemile on JavaScriptist saanud üks kaasaegse arenduse põhikeeli.
             </p>
         </section>
 
@@ -38,20 +29,20 @@
             <h2>Põhiomadused</h2>
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3>Dünaamiline Tüpiseermine</h3>
-                    <p>Muutujate tüübid määratakse automaatselt käitusajal, pakkudes paindlikkust arendamisel.</p>
+                    <h3>Dünaamiline Tüüpimine</h3>
+                    <p>Muutuja väärtuse tüüp selgub käitusajal, võimaldades paindlikku ja kiiret arendamist.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Prototüüpide Pärimine</h3>
-                    <p>JavaScript kasutab prototüüpidel põhinevat objektorienteeritud programmeerimist.</p>
+                    <h3>Lihtne Objektipärimine</h3>
+                    <p>Keele pärimismudel põhineb objektidel, mis saavad üksteist laiendada ja täiendada.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Asünkroonne Programmeerimine</h3>
-                    <p>Toetus callback'idele, promise'idele ja async/await süntaksile võimaldab tõhusat mitmeülesandelist töötlemist.</p>
+                    <h3>Asünkroonne Käitumine</h3>
+                    <p>Sündmuspõhine mudel koos callback'ide, promise'ide ja async/await toega võimaldab tõhusalt hallata viivitusega toiminguid.</p>
                 </div>
                 <div class="feature-card">
-                    <h3>Universaalne Keel</h3>
-                    <p>Töötab veebilehitsejates, serverites (Node.js), mobiilirakenduses ja isegi IoT seadmetes.</p>
+                    <h3>Lai Kasutusala</h3>
+                    <p>JavaScript töötab brauserites, serverirakendustes, mobiili- ja lauaarvutirakendustes ning isegi IoT seadmetes.</p>
                 </div>
             </div>
         </section>
@@ -59,12 +50,17 @@
         <section class="use-cases">
             <h2>Kasutusvaldkonnad</h2>
             <ul class="use-list">
-                <li><strong>Veebirakendused:</strong> Interaktiivsed kasutajaliidesed, SPA (Single Page Applications)</li>
-                <li><strong>Serveripoolne arendus:</strong> Node.js abil saab luua kiireid ja skaleeritavaid servereid</li>
-                <li><strong>Mobiilirakendused:</strong> React Native, Ionic ja teised raamistikud</li>
-                <li><strong>Töölauarakendused:</strong> Electron'i abil (nt VS Code, Discord, Slack)</li>
-                <li><strong>Mänguarendus:</strong> Veebipõhised mängud ja interaktiivsed animatsioonid</li>
-                <li><strong>Masinõpe:</strong> TensorFlow.js võimaldab masinõpet brauseris</li>
+                <li><strong>Veebirakendused:</strong> Interaktiivsed kasutajaliidesed, reaalajas toimivad rakendused nagu vestlus- või kaardirakendused.</li>
+
+                <li><strong>Serveripoolne arendus:</strong> Node.js võimaldab luua kiireid, skaleeritavaid ja sündmuspõhiseid servereid, mis sobivad nii API-de kui ka suure koormusega teenuste jaoks.</li>
+
+                <li><strong>Mobiilirakendused:</strong> Raamistikud nagu React Native, Ionic ja NativeScript võimaldavad mugavalt ehitada mobiilirakendusi.</li>
+
+                <li><strong>Töölauarakendused:</strong> Electroni ja Tauri abil saab luua platvormidevahelisi töölauarakendusi; tuntud näited on VS Code, Discord, Slack ja Figma.</li>
+
+                <li><strong>Mänguarendus:</strong> JavaScript sobib 2D- ja 3D-veebimängude loomiseks tänu teekidele nagu Phaser, Three.js ja Pixi.js, pakkudes graafilisi efekte ja animatsioone brauseris.</li>
+
+                <li><strong>Masinõpe:</strong> TensorFlow.js ja Brain.js võimaldavad käivitada närvivõrke ja treenida masinõppe mudeleid otse brauseris või Node.js-is, ilma serveripoolse töötluseta.</li> 
             </ul>
         </section>
 
@@ -72,19 +68,31 @@
             <h2>Populaarsed Raamistikud ja Teegid</h2>
             <div class="frameworks-grid">
                 <div class="framework-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/330px-React-icon.svg.png" alt="React">
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/330px-React-icon.svg.png" 
+                        alt="React"
+                        onclick="window.open('https\://reactjs.org/', '_blank')">
                     <p>React</p>
                 </div>
                 <div class="framework-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/330px-Vue.js_Logo_2.svg.png" alt="Vue">
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/330px-Vue.js_Logo_2.svg.png" 
+                        alt="Vue"
+                        onclick="window.open('https\://vuejs.org/', '_blank')">
                     <p>Vue.js</p>
                 </div>
                 <div class="framework-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/67/Angular_gradient_logo.png" alt="Angular">
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Angular_gradient_logo.png/500px-Angular_gradient_logo.png" 
+                        alt="Angular"
+                        onclick='window.open("https\://angular.io/", "_blank")'>
                     <p>Angular</p>
                 </div>
                 <div class="framework-item">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" alt="Node.js">
+                    <img 
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png" 
+                        alt="Node.js"
+                        onclick='window.open("https\://nodejs.org/", "_blank")'>
                     <p>Node.js</p>
                 </div>
             </div>
@@ -92,37 +100,61 @@
 
         <section class="code-example">
             <h2>Süntaksi näide</h2>
-            <pre><code>// Tervituse funktsioon
-function tervita(nimi) {
-    return `Tere, ${nimi}! Tere tulemast JavaScripti maailma!`;
+            <pre><code>// Objekt kasutaja andmetega
+const kasutaja = {
+    nimi: "Kati",
+    vanus: 28,
+    hobid: ["joonistamine", "matkamine"],
+
+    // Meetod (funktsioon), mis tagastab lühikese kirjelduse
+    kirjeldus() {
+        return `${this.nimi} on ${this.vanus}-aastane ja talle meeldib ${this.hobid[0]}.`;
+    }
+};
+
+console.log(kasutaja.kirjeldus());
+
+// Klassi näide
+class Ulesanne {
+    constructor(pealkiri) {
+        this.pealkiri = pealkiri;
+        this.tehtud = false;
+    }
+
+    teeValmis() {
+        this.tehtud = true;
+    }
 }
 
-// Massiivi töötlemine
-const keeled = ['JavaScript', 'Python', 'C++', 'Java'];
-keeled.forEach(keel => {
-    console.log(`${keel} on võimas programmeerimiskeel`);
-});
+const u1 = new Ulesanne("Õpi JavaScripti");
+u1.teeValmis();
+console.log(u1);
 
-// Asünkroonne andmete päring
-async function laeDandmed() {
-    try {
-        const vastus = await fetch('https://api.example.com/data');
-        const andmed = await vastus.json();
-        console.log(andmed);
-    } catch (viga) {
-        console.error('Viga andmete laadimisel:', viga);
-    }
-}</code></pre>
+// Lihtne asünkroonne funktsioon
+async function laeAndmed() {
+    // Simuleerime andmete laadimist Promise abil
+    const tulemus = await new Promise(resolve =>
+        setTimeout(() => resolve("Andmed laetud!"), 500)
+    );
+    console.log(tulemus);
+}
+
+// Käivita asünkroonne funktsioon ja jätka
+laeAndmed();
+
+// Või oota asünkroonse funktsiooni tulemus enne jätkamist
+await laeAndmed();
+</code></pre>
         </section>
 
-        <section class="conclusion">
-            <h2>Kokkuvõte</h2>
-            <p>
-                JavaScript on kaasaegse veebiarenduse alustaladeks. Selle paindlikkus, lai ökosüsteem ja 
-                pidev areng teevad sellest suurepärase valiku nii algajatele kui ka kogenud arendajatele. 
-                Olenemata sellest, kas soovid luua interaktiivseid veebilehti, võimsaid servereid või 
-                mobiilirakendusi, JavaScript pakub vahendeid oma ideede ellu viimiseks.
-            </p>
+        <section class="materials">
+            <h2>Õppematerjalid</h2>
+            <ul>
+                <li><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN Web Docs - JavaScript</a></li>
+                <li><a target="_blank" href="https://www.w3schools.com/js/">W3Schools - JavaScript</a></li>
+                <li><a target="_blank" href="https://javascript.info/">JavaScript.info</a></li>
+                <li><a target="_blank" href="https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/">freeCodeCamp - JavaScript</a></li>
+            </ul>
         </section>
     </main>
 </body>
