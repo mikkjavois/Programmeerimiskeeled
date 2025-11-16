@@ -1,13 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="python.css">
     <meta charset="utf-8">
-<title>Lehe päis</title>
+    <title>Python</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="python.css">
 </head>
+
 <body>
-    <h1>Python</h1>
-    <a href="https://docs.python.org/3/" target="_blank">Pythoni dokumentatsioon</a>
-    <img class="pilt" src="https://www.acsce.edu.in/blog/wp-content/uploads/2017/03/python-logo.jpg" alt="Programming languages">
+    <header>
+        <h1>Python</h1>
+    </header>
+
+    <main>
+
+        <section>
+            <img src="https://www.acsce.edu.in/blog/wp-content/uploads/2017/03/python-logo.jpg"
+                 alt="Python logo"
+                 class="pilt">
+            <p>
+                Python on interpreteeritav, dünaamiliselt tüübistatav, objektorienteeritud ja kõrgetasemeline 
+                programmeerimiskeel. Python on tuntud kui algajatele sobiv keel, mis on asendanud Java kui 
+                kõige levinuma algõppekeele, kuna see võtab enda kanda suure osa keerukusest, võimaldades 
+                algajatel keskenduda programmeerimise põhimõtete omandamisele, mitte pisidetailidele.
+            </p>
+        </section>
+
+        <section>
+            <h2>Põhiomadused</h2>
+            <ul>
+                <li><strong>Dünaamiline tüübistamine</strong> – muutujate tüüpi ei pea ette määrama.</li>
+                <li><strong>Mitme paradigma tugi</strong> – objektorienteeritud, funktsionaalne ja protseduuriline.</li>
+                <li><strong>Platvormiülene</strong> – töötab Windowsil, Linuxil, macOS-il jpm.</li>
+                <li><strong>Interpretaatoripõhine</strong> – ei vaja kompileerimist.</li>
+            </ul>
+        </section>
+
+        <section class="kasutusvaldkonnad">
+            <h2>Kasutusvaldkonnad</h2>
+            <ul>
+                <li><strong>Veebiarendus:</strong> Django, Flask.</li>
+                <li><strong>Andmeteadus:</strong> NumPy, Pandas, Matplotlib.</li>
+                <li><strong>Masinõpe:</strong> TensorFlow, PyTorch, scikit-learn.</li>
+                <li><strong>GUI rakendused:</strong> Tkinter, PyQt.</li>
+                <li><strong>Mängude arendus:</strong> Pygame.</li>
+            </ul>
+        </section>
+
+        <section class="frameworks">
+            <h2>Populaarsed Raamistikud ja Teegid</h2>
+            <div class="frameworks-grid">
+
+                <div class="framework-item">
+                    <img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/FastAPI_b.jpg"
+                         alt="FastAPI">
+                    <p>FastAPI</p>
+                </div>
+
+                <div class="framework-item">
+                    <img src="https://tincode-django.s3.amazonaws.com/media/courses/4382943c-2f03-45ab-9a1e-b1968ae53b67.jpg"
+                         alt="Django">
+                    <p>Django</p>
+                </div>
+
+                <div class="framework-item">
+                    <img src="https://miro.medium.com/1*XzIRJGujfqAiOV2EIQgR_Q.png"
+                         alt="Flask">
+                    <p>Flask</p>
+                </div>
+
+                <div class="framework-item">
+                    <img src="https://requests.readthedocs.io/en/latest/_static/requests-sidebar.png"
+                         alt="Requests">
+                    <p>Requests</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="code-example">
+            <h2>Süntaksi näide</h2>
+            <pre><code># Funktsioon, mis võtab nimekirja numbreid ja tagastab uue nimekirja,
+# kus iga number on suurendatud 1 võrra
+def suurenda(numbrid):
+    # list comprehension – lühike viis uue listi loomiseks
+    return [n + 1 for n in numbrid]
+
+# Funktsioon, mis leiab ainult paarisarvud
+def paaris(numbrid):
+    tulemus = []
+    for n in numbrid:
+        if n % 2 == 0:  # % kontrollib jääki, paarisarv on jagatav kahega
+            tulemus.append(n)
+    return tulemus
+
+# Funktsioon, mis tagastab numbrite summa
+def summa(numbrid):
+    s = 0
+    for n in numbrid:
+        s += n
+    return s
+
+# Funktsioon, mis prindib eri käitumise sõltuvalt väärtusest
+def kirjeldus(n):
+    if n < 0:
+        print("Negatiivne arv:", n)
+    elif n == 0:
+        print("Null")
+    else:
+        print("Positiivne arv:", n)
+
+# Testime funktsioone
+numbrid = [1, 2, 3, 4, 5]
+print("Algne list:", numbrid)
+print("Suurendatud:", suurenda(numbrid))
+print("Paarisarvud:", paaris(numbrid))
+print("Summa:", summa(numbrid))
+
+kirjeldus(-2)
+kirjeldus(0)
+kirjeldus(8)
+</code></pre>
+        </section>
+
+        <section class="õppematerjalid">
+            <h2>Õppematerjalid</h2>
+            <ul>
+                <li><a href="https://www.python.org/" target="_blank">Python ametlik dokumentatsioon</a></li>
+                <li><a href="https://progeopik.cs.ut.ee/index.html" target="_blank">TÜ Arvutiteaduse instituudi õpik</a></li>
+                <li><a href="https://pydoc.pages.taltech.ee/introduction/algorithm.html" target="_blank">TalTech Pythoni materjalid 2025</a></li>
+                <li><a href="https://www.w3schools.com/python/default.asp" target="_blank">W3Schools</a></li>
+            </ul>
+        </section>
+
+    </main>
 </body>
+
 </html>
