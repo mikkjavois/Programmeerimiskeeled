@@ -26,6 +26,14 @@ ul li {
     background-color: mediumseagreen;
     border-color: limegreen;
 }
+.kood {
+    background-color: #1e1e1e;
+    color: white;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    padding: 10px;
+}
 .õppematerjalid li {
     border: none;
     border-left: 5px solid lightskyblue;
