@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="et">
 
 <head>
     <meta charset="utf-8">
@@ -16,9 +16,10 @@
     <main>
 
         <section>
+            <h6>
             <img src="https://www.acsce.edu.in/blog/wp-content/uploads/2017/03/python-logo.jpg"
                  alt="Python logo"
-                 class="pilt">
+                 class="pilt"></h6>
             <p>
                 Python on interpreteeritav, dünaamiliselt tüübistatav, objektorienteeritud ja kõrgetasemeline 
                 programmeerimiskeel. Python on tuntud kui algajatele sobiv keel, mis on asendanud Java kui 
@@ -79,9 +80,9 @@
             </div>
         </section>
 
-        <section class="code-example">
+        <section>
             <h2>Süntaksi näide</h2>
-            <pre><code># Funktsioon, mis võtab nimekirja numbreid ja tagastab uue nimekirja,
+            <p class="kood"># Funktsioon, mis võtab nimekirja numbreid ja tagastab uue nimekirja,
 # kus iga number on suurendatud 1 võrra
 def suurenda(numbrid):
     # list comprehension – lühike viis uue listi loomiseks
@@ -104,7 +105,7 @@ def summa(numbrid):
 
 # Funktsioon, mis prindib eri käitumise sõltuvalt väärtusest
 def kirjeldus(n):
-    if n < 0:
+    if n &lt; 0:
         print("Negatiivne arv:", n)
     elif n == 0:
         print("Null")
@@ -120,8 +121,7 @@ print("Summa:", summa(numbrid))
 
 kirjeldus(-2)
 kirjeldus(0)
-kirjeldus(8)
-</code></pre>
+kirjeldus(8)</p>
         </section>
 
         <section class="õppematerjalid">
