@@ -1,3 +1,4 @@
+<script src="quiz.js"></script>
 <!DOCTYPE html>
 <html lang="et">
 <head>
@@ -5,6 +6,7 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="./style.css">
     <title>Javascript</title>
+    <script src="../quiz.js"></script>
 </head>
 <body>
     <header>
@@ -146,6 +148,81 @@ laeAndmed();
 // Või oota asünkroonse funktsiooni tulemus enne jätkamist
 await laeAndmed();
 </code></pre>
+        </section>
+
+        <section class="quiz">
+            <h2>Teadmistekontroll</h2>
+
+            <form id="quizForm" class="quiz-form" onsubmit="return false;">
+                <div class="question question-pick">
+                    <p class="q"><strong>1.</strong> Mis on JavaScripti põhikasutus?</p>
+                    <label><input type="radio" value="a"> a) Andmebaasi haldus</label><br>
+                    <label><input type="radio" value="b"> b) Veebilehtede interaktiivsus</label><br>
+                    <label><input type="radio" value="c"> c) Operatsioonisüsteemi tuuma kirjutamine</label>
+                </div>
+
+                <div class="question question-pick">
+                    <p class="q"><strong>2.</strong> Mida tagastab <code>"4" == 4</code> ?</p>
+                    <label><input type="radio" value="a"> a) true</label><br>
+                    <label><input type="radio" value="b"> b) false</label><br>
+                </div>
+
+                <div class="question question-pick">
+                    <p class="q"><strong>3.</strong> Mida tagastab <code>"4" === 4</code> ?</p>
+                    <label><input type="radio" value="a"> a) true</label><br>
+                    <label><input type="radio" value="b"> b) false</label><br>
+                    <label><input type="radio" value="c"> c) TypeError</label><br>
+                </div>
+
+                <div class="question question-select">
+                    <p class="q"><strong>4.</strong> Vali terminile õige selgitus:</p>
+
+                    <div class="term-select">
+                        <span class="term"><code>Promise</code></span>
+                        <select name="s1">
+                            <option value="">vali</option>
+                            <option value="a">Objekt, mis esindab asünkroonse operatsiooni tulemust</option>
+                            <option value="b">Süntaksiviga</option>
+                            <option value="c">DOM element</option>
+                        </select>
+                    </div>
+
+                    <div class="term-select">
+                        <span class="term"><code>async/await</code></span>
+                        <select name="s2">
+                            <option value="">vali</option>
+                            <option value="a">Süntaks, mis lihtsustab asünkroonsete funktsioonide kirjutamist</option>
+                            <option value="b">Funktsioon, mis tagastab lubaduse</option>
+                            <option value="c">Veebilehe laadimise kiirendamine</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="question question-multi">
+                    <p class="q"><strong>5.</strong> Märgi tõesed väited:</p>
+                    <label><input type="checkbox" value="a"> a) JavaScript on dünaamilise tüübiga keel</label><br>
+                    <label><input type="checkbox" value="b"> b) JavaScript on kompileeritud keel</label><br>
+                    <label><input type="checkbox" value="c"> c) <code>const</code> tüübiga muutujat ei saa muuta pärast deklareerimist</label><br>
+                    <label><input type="checkbox" value="d"> d) <code>null</code> väärtus on objekti tüüpi</label><br>
+                </div>
+
+                <div class="quiz-actions">
+                    <button 
+                        id="checkBtn" 
+                        class="btn"
+                        onclick="checkQuiz([
+                            'b', 
+                            'a', 
+                            'b', 
+                            ['a', 'a'], 
+                            ['a', 'c', 'd']
+                        ])"
+                        >Kontrolli</button>
+                    <button id="resetBtn" class="btn" onclick="resetQuiz()">Lähtesta</button>
+                </div>
+
+                <div id="quizResult" class="quiz-result"></div>
+            </form>
         </section>
 
         <section class="materials">

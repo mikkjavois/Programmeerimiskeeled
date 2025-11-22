@@ -255,3 +255,91 @@ h2 {
 .comparison-table tbody tr:hover {
     background-color: #f0f0f0;
 }
+
+/* Quiz section styles */
+.quiz {
+    margin-top: 2rem;
+}
+
+.quiz-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.question {
+    padding: 1rem;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0.01));
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.question .q {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.question .term {
+    min-width: 120px;
+    display: inline-block;
+    color: #333;
+    font-weight: 600;
+}
+
+.term-select {
+    margin-bottom: 0.6rem;
+}
+
+select {
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.quiz input {
+    margin-right: 0.5rem;
+}
+
+.quiz-actions {
+    margin-top: 0.8rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+#checkBtn.btn {
+    background-color: #e5f4ff;
+    color: #000;
+    border: 2px solid #6cbdff;
+    cursor: pointer;
+}
+
+#checkBtn.btn:hover {
+    filter: brightness(0.95);
+}
+
+#resetBtn.btn {
+    background: #fff;
+    color: #333;
+    border: 2px solid #ddd;
+}
+
+#resetBtn.btn:hover {
+    background: #f6f6f6;
+}
+
+.quiz-result {
+    margin-top: 0.8rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.correct {
+    border-left: 4px solid #4CAF50;
+    background: rgba(76,175,80,0.06);
+}
+
+.incorrect {
+    border-left: 4px solid #f44336;
+    background: rgba(244,67,54,0.04);
+}
