@@ -24,8 +24,51 @@ function resetQuiz() {
     clearChecks();
 }
 
-/** Kontrollib vastuseid
+/** Kontrollib vastuseid, lisab vastavad CSS klassid ja tulemuse
  * @param answers - Õiged vastused (HTML value) vastavas järjekorras listina
+ * @returns {void}
+ * @example
+ * checkQuiz(['a', ['a', 'b'], ['a', 'c']]);
+ * ...
+ * <section class="quiz">
+        <h2>Teadmistekontroll</h2>
+
+        <form id="quizForm" class="quiz-form" onsubmit="return false;">
+            <div class="question question-pick">
+                <p class="q">Vali õige vastus:</p>
+                <label><input type="radio" value="a">õige</label><br>
+                <label><input type="radio" value="b">vale</label><br>
+            </div>
+
+            <div class="question question-select">
+                <p class="q">Vali õige variant:</p>
+
+                <div class="term-select">
+                    <span class="term"><code>Mõiste</code></span>
+                    <select name="s1">
+                        <option value="a">õige</option>
+                        <option value="b">vale</option>
+                    </select>
+                </div>
+
+                <div class="term-select">
+                    <span class="term"><code>Mõiste</code></span>
+                    <select name="s1">
+                        <option value="a">vale</option>
+                        <option value="b">õige</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="question question-multi">
+                <p class="q">Märgi tõesed väited:</p>
+                <label><input type="checkbox" value="a">õige</label><br>
+                <label><input type="checkbox" value="b">vale</label><br>
+                <label><input type="checkbox" value="c">õige</label><br>
+            </div>
+        </form>
+        <div class="quiz-result"></div>
+    </section>
  */
 function checkQuiz(answers) {
     const quizContainer = document.querySelector('.quiz');
@@ -34,12 +77,14 @@ function checkQuiz(answers) {
 
     clearChecks();
 
+    // valikvastusega küsimus (radio button)
     const checkQuestionPick = (question, index) => {
         const selectedOption = question.querySelector('input[type="radio"]:checked');
         return selectedOption && selectedOption.value === answers[index] 
             ? 1 : 0;
     }
 
+    // valikvastusega küsimused (vali õige tähendus jne)
     const checkQuestionSelect = (question, correctAnswers) => {
         const selects = question.querySelectorAll('select');
         let score = 0;
@@ -51,6 +96,7 @@ function checkQuiz(answers) {
         return score;
     }
 
+    // mitme vastusega küsimus
     const checkQuestionMulti = (question, correctAnswers) => {
         const checkboxes = question.querySelectorAll('input[type="checkbox"]');
         let score = 0;
@@ -64,8 +110,9 @@ function checkQuiz(answers) {
         return score;
     }
 
-    let score = 0;
 
+    // kontrolli küsimusi, lisa punkte vastavalt vastustele
+    let score = 0;
     const questions = form.querySelectorAll('.question');
     questions.forEach((question, index) => {
         let qScore = 0;
