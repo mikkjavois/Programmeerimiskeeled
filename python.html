@@ -6,6 +6,7 @@
     <title>Python</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="python.css">
+    <script src="quiz.js"></script>
 </head>
 
 <body>
@@ -19,7 +20,7 @@
             <img src="https://www.acsce.edu.in/blog/wp-content/uploads/2017/03/python-logo.jpg"
                  alt="Python logo"
                  class="pilt">
-            <h3 class="intro-text">
+            <h3 class="sissejuhatus">
                 Python on interpreteeritav, dünaamiliselt tüübistatav, objektorienteeritud ja kõrgetasemeline 
                 programmeerimiskeel. Python on tuntud kui algajatele sobiv keel, mis on asendanud Java kui 
                 kõige levinuma algõppekeele, kuna see võtab enda kanda suure osa keerukusest, võimaldades 
@@ -132,7 +133,56 @@ kirjeldus(8)</p>
                 <li><a href="https://www.w3schools.com/python/default.asp" target="_blank">W3Schools</a></li>
             </ul>
         </section>
+        <section class="quiz">
+            <h2>Teadmistekontroll</h2>
 
+            <form id="quizForm" class="quiz-form" onsubmit="return false;">
+                <div class="question question-pick">
+                    <p class="q"><strong>1.</strong>Arvatakse, et Python on algajale ... keel</p>
+                    <label><input type="radio" name="q1" value="a">lihtne</label><br>
+                    <label><input type="radio" name="q1" value="b">pigem raske</label><br>
+                    <label><input type="radio" name="q1" value="c">väga raske</label>
+                </div>
+
+                <div class="question question-pick">
+                    <p class="q"><strong>2.</strong>Kas Pythonis peab muutuja tüübi alati ette määrama?</p>
+                    <label><input type="radio" name="q2" value="a">Jah, tüüp tuleb alati käsitsi määrata</label><br>
+                    <label><input type="radio" name="q2" value="b">Ei, Python kasutab dünaamilist tüübistamist</label><br>
+                    <label><input type="radio" name="q2" value="c">Ainult täisarvude puhul</label><br>
+                    <label><input type="radio" name="q2" value="d">Ainult funktsioonide sees</label><br>
+                </div>
+
+                <div class="question question-pick">
+                    <p class="q"><strong>3.</strong>Kas Python tuleb enne käivitamist käsitsi kompileerida?</p>
+                    <label><input type="radio" name="q3" value="a">Jah, Python tuleb alati enne jooksutamist kompileerida</label><br>
+                    <label><input type="radio" name="q3" value="b">Ei, Python on interpreteeritav ja käivitub ilma eelneva kompileerimiseta</label><br>
+                    <label><input type="radio" name="q3" value="c">Ainult siis, kui kasutatakse väliseid teeke</label>
+                </div>
+
+                <div class="question question-multi">
+                    <p class="q"><strong>4.</strong>Pyton töötab järgmistel platvormidel:</p>
+                    <label><input type="checkbox" value="a">Linux</label><br>
+                    <label><input type="checkbox" value="b">Windows</label><br>
+                    <label><input type="checkbox" value="c">macOS</label><br>
+                </div>
+
+                <div class="quiz-actions">
+                    <button 
+                        id="checkBtn" 
+                        class="btn"
+                        onclick="checkQuiz([
+                            'a', 
+                            'b', 
+                            'b', 
+                            ['a', 'c', 'b']
+                        ])"
+                        >Kontrolli</button>
+                    <button id="resetBtn" class="btn" onclick="resetQuiz()">Lähtesta</button>
+                </div>
+
+                <div class="quiz-result"></div>
+            </form>
+        </section>
     </main>
 </body>
 
