@@ -1,5 +1,6 @@
 /**
  * Eemaldab kõik õige/vale style'id ja tulemuse
+ * @author Mikk Javoiš
  */
 function clearChecks() {
     const quizContainer = document.querySelector('.quiz');
@@ -15,6 +16,7 @@ function clearChecks() {
 
 /**
  * Lähtestab vastused
+ * @author Mikk Javoiš
  */
 function resetQuiz() {
     const quizContainer = document.querySelector('.quiz');
@@ -27,6 +29,7 @@ function resetQuiz() {
 /** Kontrollib vastuseid, lisab vastavad CSS klassid ja tulemuse
  * @param answers - Õiged vastused (HTML value) vastavas järjekorras listina
  * @returns {void}
+ * @author Mikk Javoiš
  * @example
  * checkQuiz(['a', ['a', 'b'], ['a', 'c']]);
  * ...
