@@ -1,0 +1,345 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(70deg, #fff6ed 0%, #ffefe0 100%);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #f7df1e;
+    color: #000;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #333;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+section {
+    background-color: white;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    color: whitesmoke;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.section-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin: 1.5rem auto;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 1.8;
+    color: #555;
+    margin-top: 1rem;
+}
+
+.materials p {
+    font-size: 1rem;
+    text-align: justify;
+    line-height: 1.8;
+    color: #555;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, #f7df1e 0%, #ffd700 100%);
+    color: #333;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.8rem;
+}
+
+.feature-card p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    flex-grow: 1;
+    margin-bottom: 1rem;
+}
+
+.use-list {
+    list-style: none;
+    padding: 0;
+}
+
+.use-list li {
+    background-color: #f9f9f9;
+    margin: 0.8rem 0;
+    padding: 1rem;
+    border-left: 4px solid #f7df1e;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.use-list li strong {
+    color: #333;
+    font-weight: bold;
+}
+
+.frameworks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+.framework-item img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    cursor: pointer;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-bottom: 0.5rem;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.framework-item img:hover {
+    transform: scale(1.1);
+}
+
+.framework-item p {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+}
+
+.code-example pre {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.code-example code {
+    display: block;
+}
+
+.materials ul {
+    list-style: none;
+}
+
+.materials ul li {
+    border: none;
+    border-left: 5px solid lightskyblue;
+    background-color: #e0ffff;
+    text-decoration: none;
+    border-radius: 3px;
+    color: white;
+    padding: 5px 10px;
+    margin: 5px auto;
+}
+
+/* index.html */
+.btn {
+    background-color: white;
+    color: #333;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: 2px solid white;
+}
+
+.btn:hover {
+    background-color: transparent;
+    color: white;
+    border-color: white;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+}
+
+.comparison-table thead {
+    background-color: #333;
+}
+
+.comparison-table th {
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: bold;
+    border: 1px solid #ddd;
+}
+
+.comparison-table td {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    color: #555;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.comparison-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Quiz section styles */
+.quiz {
+    margin-top: 2rem;
+}
+
+.quiz-form {
+    display: grid;
+    gap: 1rem;
+}
+
+.question {
+    padding: 1rem;
+    border-radius: 8px;
+    background: linear-gradient(180deg, rgba(0,0,0,0.03), rgba(0,0,0,0.01));
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.question .q {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.question .term {
+    min-width: 120px;
+    display: inline-block;
+    color: #333;
+    font-weight: 600;
+}
+
+.term-select {
+    margin-bottom: 0.6rem;
+}
+
+select {
+    padding: 0.4rem 0.6rem;
+    border-radius: 6px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.quiz input {
+    margin-right: 0.5rem;
+}
+
+.quiz-actions {
+    margin-top: 0.8rem;
+    display: flex;
+    gap: 0.8rem;
+}
+
+#checkBtn.btn {
+    background-color: #e5f4ff;
+    color: #000;
+    border: 2px solid #6cbdff;
+    cursor: pointer;
+}
+
+#checkBtn.btn:hover {
+    filter: brightness(0.95);
+}
+
+#resetBtn.btn {
+    background: #fff;
+    color: #333;
+    border: 2px solid #ddd;
+}
+
+#resetBtn.btn:hover {
+    background: #f6f6f6;
+}
+
+.quiz-result {
+    margin-top: 0.8rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.correct {
+    border-left: 4px solid #4CAF50;
+    background: rgba(76,175,80,0.06);
+}
+
+.incorrect {
+    border-left: 4px solid #f44336;
+    background: rgba(244,67,54,0.04);
+}

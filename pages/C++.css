@@ -12,8 +12,8 @@ body {
 }
 
 header {
-    background-color: #f7df1e;
-    color: #000;
+    background-color: #1e91e9;
+    color: #fcfcfc;
     padding: 3rem 2rem;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -102,8 +102,8 @@ h2 {
 }
 
 .feature-card {
-    background: linear-gradient(135deg, #f7df1e 0%, #ffd700 100%);
-    color: #333;
+    background: linear-gradient(135deg, #1e91e9 0%, #1e91e9 100%);
+    color: #ffffff;
     padding: 1.5rem;
     border-radius: 10px;
     text-align: center;
@@ -134,7 +134,7 @@ h2 {
     background-color: #f9f9f9;
     margin: 0.8rem 0;
     padding: 1rem;
-    border-left: 4px solid #f7df1e;
+    border-left: 4px solid #1e91e9;
     border-radius: 4px;
     font-size: 1rem;
 }
