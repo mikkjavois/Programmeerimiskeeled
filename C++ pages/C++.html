@@ -77,18 +77,18 @@
         <section class="code-example">
             <h2>Koodi näidis</h2>
             <pre><code>
-                <text>//TEKSTI VÄLJAKIRJUTAMINE//</text>
-                #include &lt;iostream&gt; <text1>//Alustame sisend ja väljundi faili sisaldamisega//</text1>
-                int main() {    <text1>//Siis tuleb kirjutama funktsiooni//</text1>
-                    std::cout << "Tere maailm!"; <text1>//Viimasena võtame raamatukogust (std) teksti väljastamine (cout) ja kirjutame!//
+                <text>// TEKSTI VÄLJAKIRJUTAMINE \\</text>
+                #include &lt;iostream&gt;         <text1>//Alustame sisend ja väljundi faili sisaldamisega//</text1>
+                int main() {                      <text1>//Siis tuleb kirjutama funktsiooni//</text1>
+                    std::cout << "Tere maailm!";  <text1>//Viimasena võtame raamatukogust (std) teksti väljastamine (cout) ja kirjutame!//</text1>
                 }
 
-                <text>//ARVUTAMINE//</text>
+                <text>// ARVUTAMINE \\</text>
                 #include &lt;iostream&gt;
-                using namespace std;   <text1>//Et koguaeg mitte välja kirjutama "std::" //</text1>
+                using namespace std;              <text1>//Et koguaeg mitte välja kirjutama "std::" //</text1>
                 int main() {
-                    int a;  <text1>//Kirjutame välja, millega meie arvud hakkavad võrduma//</text1>
-                    int b;  <text1>//Sõna "int" on muuta lihtsalt arvud täisarvudeks//</text1>
+                    int a;                        <text1>//Kirjutame välja, millega meie arvud hakkavad võrduma//</text1>
+                    int b;                        <text1>//Sõna "int" on muuta lihtsalt arvud täisarvudeks//</text1>
 
                     cout << "Sisendage arvud:" ;  <text1>//Nüüd teeme nii, et meie sisendatud arvud olid võrdset kahe meie muutujaga//</text1>
                     cin >> a;
@@ -96,7 +96,35 @@
 
                     int sum = a + b;    
 
-                    cout << "Summa:" << sum;    <text1>//Viimasena väljastame summat//</text1>
+                    cout << "Summa:" << sum;      <text1>//Viimasena väljastame summat//</text1>
+                }
+
+                <text>// If/Else LAUSE \\</text>
+                #include &lt;iostream&gt;
+                using namespace std;
+                
+                int main() {
+                    int number;
+                    cout << "Sisestage numbrid: ";
+                    cin >> number;
+                    
+                    if (number % 2 == 0) {     <text1>//Alustame if lausega ja vaatame, kas arv on paaris arv//</text1>
+                        cout << "Paaris arv";
+                    } else {                   <text1>//Kui arv ei ole paaris, siis ta on paaritu//</text1>
+                        cout << "Paaritu arv";
+                    }
+                }
+
+                <text>// TSÜKKEL \\</text>
+                #include &lt;iostream&gt;
+                using namespace std;
+                
+                int main() {
+                    int i = 1;      <text1>//Teeme nii, et muutuja i võrdub 1//</text1>
+                    
+                    for (;i <= 10; i+=1) {  <text1>//Kirjutame tsükkli, kus sulgude alguses on ";", kuna i on juba määratud.</text1>    
+                        cout << i << " ";   <text1>Pärast kirjutame tsükkli lõpetamise tingimust ja lõpuks kui palju kasvab muutuja i.//</text1>
+                    }
                 }
             </code></pre>
         </section>
