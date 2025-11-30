@@ -1,0 +1,224 @@
+<script src="quizC.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++</title>
+    <link rel="stylesheet" href="C++.css">
+    <script src="../quizC.js" defer></script>
+</head>
+<body>
+    <header><h1>C++</h1></header>
+    <main>
+        <section class="intro">
+            <img
+                src="https://logonoid.com/images/c-plus-plus-logo.png"
+                alt="C++"
+                class="main-image"
+            >
+            <h3>Kiir ja võimas programmeerimiskeel, mida kasutatakse keerukate ja tõhusate programmide loomiskes.
+                See keel sobib nii tavaliste lihtsate programmide kui ka projektide jaoks, mis on üles ehitatud igasugustest objektidest ja osadest.
+                C++ võimaldab programmeerijal täpselt hallata mälu ja arvuti tööd, mis aitab programmidele kiiremini töötama.
+                Tänu sellele kasutatakse seda keelt peaaegu kõikjal, mis teeb seda keelt universaalseks!
+            </h3>
+        </section>
+        <section class="fetures">
+            <h2>Põhiomadused</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>Objektorienteeritud programmeerimine</h3>
+                    <p>Võimaldab teha “objekte”, mis on nagu väiksed programmid programmis</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Madala taseme juhtimine</h3>
+                    <p>Saad ise kontrollida, kuidas arvuti mälu kasutatakse.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Tugev tüübisüsteem</h3>
+                    <p>Arvuti kontrollib juba enne programmi käivitamist, et kõik töötas korralikult.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Standardteek</h3>
+                    <p>C++ omab suure kogumi tööriistu ja andmestruktuuri, mida saab kohe kasutama.</p>
+                </div>
+            </div>
+        </section>
+        <section class="use-cases">
+            <h2>Kasutusvaldkonnad</h2>
+            <ul class="use-list">
+                <li><strong>Operatsioonisüsteemid -></strong> Windows, macOS (osaliselt)</li>
+                <li><strong>Seadme draiverid -></strong> NVIDIA / AMD graafikadraiverid</li>
+                <li><strong>Mikrokontrollerid -></strong> Arduino, STM32</li>
+                <li><strong>Kauplemisplatvormid -></strong> Bloomberg Terminal, MetaTrader</li>
+                <li><strong>Mängumootorite arendus -></strong> Unreal Engine, CryEngine</li>
+                <li><strong>Arvutimängude loomine -></strong> Fortnie, World of Warcraft</li>
+            </ul>
+        </section>
+        <section class="frameworks">
+            <h2>C++ rakendused ja veebilehed</h2>
+            <div class="frameworks-grid">
+                <div class="framework-item">
+                    <img
+                        src="https://logonoid.com/images/c-plus-plus-logo.png"
+                        alt="C++"
+                        onclick="window.open('https://isocpp.org/', '_blank')">
+                    <p>C++</p>
+                </div>
+                <div class="framework-item">
+                    <img 
+                        src="https://www.kindpng.com/picc/m/586-5861315_clion-logo-png-transparent-clion-jetbrains-png-download.png"
+                        alt="CLion"
+                        onclick="window.open('https://www.jetbrains.com/clion/', '_blank')">
+                    <p>CLion</p>
+                </div>
+                <div class="framework-item">
+                    <img 
+                        src="https://media.licdn.com/dms/image/D5612AQEdWjSiHC6vYw/article-cover_image-shrink_600_2000/0/1683863669862?e=2147483647&v=beta&t=0aP23j0u1uDNUoK2pzn3YPI3S0uGxy_tUEbnPc_Lh18"
+                        alt="Learn C++"
+                        onclick="window.open('https://www.learncpp.com/', '_blank')">
+                    <p>Learn C++</p>
+                </div>
+            </div>
+        </section>
+        <section class="code-example">
+            <h2>Koodi näidis</h2>
+            <pre><code>
+                <text>// TEKSTI VÄLJAKIRJUTAMINE \\</text>
+                #include &lt;iostream&gt;         <text1>//Alustame sisend ja väljundi faili sisaldamisega//</text1>
+                int main() {                      <text1>//Siis tuleb kirjutama funktsiooni//</text1>
+                    std::cout << "Tere maailm!";  <text1>//Viimasena võtame raamatukogust (std) teksti väljastamine (cout) ja kirjutame!//</text1>
+                }
+
+                <text>// ARVUTAMINE \\</text>
+                #include &lt;iostream&gt;
+                using namespace std;              <text1>//Et koguaeg mitte välja kirjutama "std::" //</text1>
+                int main() {
+                    int a;                        <text1>//Kirjutame välja, millega meie arvud hakkavad võrduma//</text1>
+                    int b;                        <text1>//Sõna "int" on muuta lihtsalt arvud täisarvudeks//</text1>
+
+                    cout << "Sisendage arvud:" ;  <text1>//Nüüd teeme nii, et meie sisendatud arvud olid võrdset kahe meie muutujaga//</text1>
+                    cin >> a;
+                    cin >> b;
+
+                    int sum = a + b;    
+
+                    cout << "Summa:" << sum;      <text1>//Viimasena väljastame summat//</text1>
+                }
+
+                <text>// If/Else LAUSE \\</text>
+                #include &lt;iostream&gt;
+                using namespace std;
+                
+                int main() {
+                    int number;
+                    cout << "Sisestage numbrid: ";
+                    cin >> number;
+                    
+                    if (number % 2 == 0) {     <text1>//Alustame if lausega ja vaatame, kas arv on paaris arv//</text1>
+                        cout << "Paaris arv";
+                    } else {                   <text1>//Kui arv ei ole paaris, siis ta on paaritu//</text1>
+                        cout << "Paaritu arv";
+                    }
+                }
+
+                <text>// TSÜKKEL \\</text>
+                #include &lt;iostream&gt;
+                using namespace std;
+                
+                int main() {
+                    int i = 1;      <text1>//Teeme nii, et muutuja i võrdub 1//</text1>
+                    
+                    for (;i <= 10; i+=1) {  <text1>//Kirjutame tsükkli, kus sulgude alguses on ";", kuna i on juba määratud.</text1>    
+                        cout << i << " ";   <text1>Pärast kirjutame tsükkli lõpetamise tingimust ja lõpuks kui palju kasvab muutuja i.//</text1>
+                    }
+                }
+            </code></pre>
+        </section>
+        <section class="quiz">
+            <h2>Teadmiskontroll</h2>
+
+            <form id="quizForm" class="quiz-form" onsubmit="return false;">
+                <div class="question question-pick">
+                    <p class="q"><strong>1.</strong> Mis on C++ põhikasutus?</p>
+                    <label><input name="q1" type="radio" value="a"> a) Andmebaasi haldus</label><br>
+                    <label><input name="q1" type="radio" value="b"> b) Veebilehtede interaktiivsus</label><br>
+                    <label><input name="q1" type="radio" value="c"> c) Operatsioonisüsteemi tuuma kirjutamine</label>
+                </div>
+                <div class="question question-pick">
+                    <p class="q"><strong>2.</strong> Mida tagastab <code>#include &lt;iostream&gt;
+                        int main() {
+                            cout << "Tere maailm!";
+                        }
+                    </code> ?</p>
+                    <label><input name="q2" type="radio" value="a"> a) Tere maailm!</label><br>
+                    <label><input name="q2" type="radio" value="b"> b) Error</label><br>
+                </div>
+                 <div class="question question-pick">
+                    <p class="q"><strong>3.</strong> Kas võib kirjutada tsükklit järgmiselt: <code>for (int i = 1; i <= 10; i++)</code> ?</p>
+                    <label><input name="q3" type="radio" value="a"> a) Jah</label><br>
+                    <label><input name="q3" type="radio" value="b"> b) Ei</label><br>
+                </div>
+
+                <div class="question question-select">
+                    <p class="q"><strong>4.</strong> Vali terminile õige selgitus:</p>
+
+                    <div class="term-select">
+                        <span class="term"><code>iostream</code></span>
+                        <select name="s1">
+                            <option value="">...</option>
+                            <option value="a">Sisendi ja väljundi käsk</option>
+                            <option value="b">Muutuja sisendi ja väljundi töötamiseks</option>
+                            <option value="c">Sisendi ja väljundi päisfail</option>
+                        </select>
+                    </div>
+
+                    <div class="term-select">
+                        <span class="term"><code>cout</code></span>
+                        <select name="s2">
+                            <option value="">...</option>
+                            <option value="a">Muutuja loomise käsk</option>
+                            <option value="b">Teksti väljastamise käsk</option>
+                            <option value="c">Muutuja võrdsustamine väärtusele</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="question question-multi">
+                    <p class="q"><strong>5.</strong> Märgi tõesed väited:</p>
+                    <label><input type="checkbox" value="a"> a) C++ on universaalne keel, mida kasutatakse nii lihtsate kui ka raskete programmide loomiseks.</label><br>
+                    <label><input type="checkbox" value="b"> b) C++ kasutatakse veebilehtede ja interaktiivse veebikoodi loomiseks.</label><br>
+                    <label><input type="checkbox" value="c"> c) C++ on aegunud keel.</label><br>
+                    <label><input type="checkbox" value="d"> d) Et mitte kogu aeg välja kirjutada <code>std::</code>, võib kirjutada käsku <code>using namespace std</code>.</label><br>
+                </div>
+
+                <div class="quiz-actions">
+                    <button 
+                        id="checkBtn" 
+                        class="btn"
+                        onclick="checkQuiz([
+                            'c', 
+                            'b', 
+                            'a', 
+                            ['c', 'b'], 
+                            ['a', 'd']
+                        ])"
+                        >Kontrolli</button>
+                    <button id="resetBtn" class="btn" onclick="resetQuiz()">Lähtesta</button>
+                </div>
+                <div class="quiz-result"></div>
+            </form>
+        </section>
+        <section class="materials">
+            <h2>Materjalid</h2>
+            <ul>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=ZzaPdXTrSb8">C++ Tutorials for Begginers</a></li>
+                <li><a target="_blank" href="https://www.w3schools.com/cpp/">C++ Tutorial W3Schools</a></li>
+                <li><a target="_blank" href="https://www.geeksforgeeks.org/cpp/cpp-cheatsheet/">C++ Cheatsheet - GeeksForGeeks</a></li>
+        </section>
+    </main>
+    <nav>
+        <p><a href="/index.html">← Tagasi pealehele</a></p>
+    </nav>
+</body>
+</html>
