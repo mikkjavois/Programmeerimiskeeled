@@ -1,2 +1,0 @@
-# Programmeerimiskeeled
-proge keelte tutvustus
