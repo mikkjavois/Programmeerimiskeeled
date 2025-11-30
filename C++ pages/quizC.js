@@ -71,7 +71,7 @@ function resetQuiz() {
     </section>
  */
 function checkQuiz(answers) {
-    const quizContainer = document.querySelector('.quizC');
+    const quizContainer = document.querySelector('.quiz');
     const form = quizContainer.querySelector('form');
     if (!form) return;
 
