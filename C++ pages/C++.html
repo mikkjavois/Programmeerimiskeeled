@@ -62,7 +62,7 @@
                     <img 
                         src="https://www.kindpng.com/picc/m/586-5861315_clion-logo-png-transparent-clion-jetbrains-png-download.png"
                         alt="CLion"
-                        onclick="window.open('https://www.jetbrains.com/', '_blank')">
+                        onclick="window.open('https://www.jetbrains.com/clion/', '_blank')">
                     <p>CLion</p>
                 </div>
                 <div class="framework-item">
@@ -73,6 +73,38 @@
                     <p>Learn C++</p>
                 </div>
             </div>
+        </section>
+        <section class="code-example">
+            <h2>Koodi näidis</h2>
+            <pre><code>
+                <text>//TEKSTI VÄLJAKIRJUTAMINE//</text>
+                #include &lt;iostream&gt; <text1>//Alustame sisend ja väljundi faili sisaldamisega//</text1>
+                int main() {    <text1>//Siis tuleb kirjutama funktsiooni//</text1>
+                    std::cout << "Tere maailm!"; <text1>//Viimasena võtame raamatukogust (std) teksti väljastamine (cout) ja kirjutame!//
+                }
+
+                <text>//ARVUTAMINE//</text>
+                #include &lt;iostream&gt;
+                using namespace std;   <text1>//Et koguaeg mitte välja kirjutama "std::" //</text1>
+                int main() {
+                    int a;  <text1>//Kirjutame välja, millega meie arvud hakkavad võrduma//</text1>
+                    int b;  <text1>//Sõna "int" on muuta lihtsalt arvud täisarvudeks//</text1>
+
+                    cout << "Sisendage arvud:" ;  <text1>//Nüüd teeme nii, et meie sisendatud arvud olid võrdset kahe meie muutujaga//</text1>
+                    cin >> a;
+                    cin >> b;
+
+                    int sum = a + b;    
+
+                    cout << "Summa:" << sum;    <text1>//Viimasena väljastame summat//</text1>
+                }
+            </code></pre>
+        </section>
+        <section class="materials">
+            <h2>Materjalid</h2>
+            <ul>
+                <li><a target="_blank" href="https://www.youtube.com/watch?v=ZzaPdXTrSb8">C++ Tutorials for Begginers</a></li>
+            </ul>
         </section>
     </main>
     <nav>

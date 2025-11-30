@@ -190,6 +190,17 @@ h2 {
     display: block;
 }
 
+.code-example text{
+    background-color: #1e1e1e;
+    color: #ebef0c;
+}
+
+.code-example text1{
+    background-color: #1e1e1e;
+    color: #436fa1;
+}
+
+
 .materials ul {
     list-style: none;
 }
